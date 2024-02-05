@@ -226,4 +226,56 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+void main() {
+  printName();
+}
+
+void printName() {
+  String name = "Anusha Acharya";
+  print("My name is $name");
+}
+
+
+WAP in dart to print even number between interval
+
+void main() {
+  printEvenNumbers(1, 20);
+}
+
+void printEvenNumbers(int start, int end) {
+  print("Even numbers between $start and $end:");
+
+  for (int i = start; i <= end; i++) {
+    if (i % 2 == 0) {
+      print(i);
+    }
+  }
+}
+
+WAP in dart that generate random password
+
+
+void main(){
+  double radius= 5.0;
+  double area= calculate(radius);
+  print("The area of circle with radius $radius is : $area");
+}
+
+double calculate( double radius){
+  double pi= 3.14;
+  return pi*radius*radius;
+}
+import 'dart:math';
+
+void main(){
+  int base=5;
+  int exponent=3;
+  int result= calculate(base, exponent);
+  print("$base ^ $exponent= $result");
+}
+
+int calculate(int base, int exponent){
+  return pow(base,exponent).toInt();
+}
+
 
